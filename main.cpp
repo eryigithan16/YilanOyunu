@@ -77,8 +77,8 @@ int main()
 
 
     Texture t1,t2;
-    t1.loadFromFile("C:/Users/sony/Desktop/SFML_games/04 Snake/images/white.png");
-    t2.loadFromFile("C:/Users/sony/Desktop/SFML_games/04 Snake/images/apple.png");
+    t1.loadFromFile("C:/Users/sony/Desktop/yilanimages/white.png");
+    t2.loadFromFile("C:/Users/sony/Desktop/yilanimages/apple.png");
     Sprite yilan(t1);
     Sprite meyve(t2);
     Clock clock;
@@ -95,8 +95,7 @@ int main()
         Event olayNesnesi;
         while (window.pollEvent(olayNesnesi)) {
             if(olayNesnesi.type==Event::Closed){
-                window.close();}} // 13-17 satırları arası yazdığımız kod, ekranı kapatana kadar çalışsın demek oluyor
-
+                window.close();}}
         if(Keyboard::isKeyPressed(Keyboard::Left)&& yon!=2) {
 
             yon=1;
